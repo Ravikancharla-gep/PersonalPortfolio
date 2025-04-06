@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <meta name="description" content="Welcome to Ravi Kancharla's portfolio. Explore my projects, skills, and contact information as a passionate front-end developer.">
+    <link rel="stylesheet" href="8)Project.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Ravi Chandra</h1>
+        <p>Full Stack Developer at GEP | IIT Tirupati | Computer Science</p>
+        <button id="hamburger" onclick="toggleMenu()">☰</button>
+        <nav role="navigation" aria-label="Main Navigation">
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>Hello! I'm Ravi Kancharla, a full stack developer passionate about creating dynamic and user-friendly websites. I enjoy solving complex problems and staying updated with the latest technologies in web development.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <article data-category="web">
+            <h3>Project 1: User Management System</h3>
+            <figure>
+                <img src="Assets/Mushrooms.jpg" alt="Screenshot of the User Management System project" width="300" height="500">
+                <img src="Assets/Forest.jpg" alt="Screenshot of the User Management System project" width="300" height="500">
+                <figcaption>A web application to manage users, built with HTML, CSS, and JavaScript.</figcaption>
+            </figure>
+        </article>
+        <article data-category="portfolio">
+            <h3>Project 2: Portfolio Website</h3>
+            <figure>
+                <img src="Assets/Child.jpg" alt="Screenshot of the Portfolio Website project">
+                <figcaption>A responsive portfolio website showcasing my skills and projects.</figcaption>
+            </figure>
+        </article>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Problem Solving</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea><br><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Ravi Kancharla. All rights reserved.</p>
+    </footer>
+
+    <script src="8)Project.js"></script>
+</body>
+
+</html>
